@@ -20,8 +20,8 @@ This structure makes it simple to compose new playbooks out of the roles. For ex
 
 ```
 ---
-- hosts: vagrant
-  remote_user: vagrant
+- hosts: "{{ hosts }}"
+  remote_user: "{{ remote_user }}"
   roles:
     - base
     - ruby-rvm

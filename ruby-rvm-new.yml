@@ -1,11 +1,11 @@
 ---
-- hosts: vagrant
-  remote_user: vagrant
+- hosts: "{{ hosts }}"
+  remote_user: "{{ remote_user }}"
   roles:
   - base
 
-- hosts: vagrant
-  remote_user: vagrant
+- hosts: "{{ hosts }}"
+  remote_user: "{{ remote_user }}"
   sudo: yes
   vars:
     rvm1_rubies:
